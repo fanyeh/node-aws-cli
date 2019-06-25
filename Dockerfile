@@ -1,10 +1,10 @@
-FROM node:8
+FROM node:8.16.0
 
 RUN apt-get update && apt-get install -y \
-    python-dev \
-    zip \
-    jq
-    
+  python-dev \
+  zip \
+  jq
+
 RUN curl -O https://bootstrap.pypa.io/get-pip.py
 
 RUN python get-pip.py
